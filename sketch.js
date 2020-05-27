@@ -21,7 +21,7 @@ var lev = 1;
 var dis = 0;
 var le = 0;
 function preload() {
-    getBackgroundImg();
+    backgroundImg = loadImage(bg);
 }
 
 function setup(){
