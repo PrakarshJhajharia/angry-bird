@@ -495,20 +495,3 @@ function mouseReleased(){
     
 
 
-async function getBackgroundImg(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
-    var responseJSON = await response.json();
-
-    var datetime = responseJSON.datetime;
-    var hour = datetime.slice(11,13);
-    
-    if(hour>=0600 && hour<=2200){
-        bg = "sprites/bg.jpg";
-    }
-    else{
-        bg = "sprites/backgroundmain.jpg";
-    
-
-    backgroundImg = loadImage(bg);
-    console.log(backgroundImg);
-    }}
